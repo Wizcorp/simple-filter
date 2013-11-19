@@ -1,0 +1,14 @@
+{
+  "name": "simple-filter",
+  "repo": "Wizcorp/simple-filter",
+  "description": "A small wrapper around crossfilter to make querying simpler",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
