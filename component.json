@@ -4,7 +4,9 @@
   "description": "A small wrapper around crossfilter to make querying simpler",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "christopherobin/crossfilter": "*"
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",
