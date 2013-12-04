@@ -2,14 +2,11 @@
   "name": "simple-filter",
   "repo": "Wizcorp/simple-filter",
   "description": "A small wrapper around crossfilter to make querying simpler",
-  "version": "0.0.1",
-  "keywords": [],
+  "version": "0.0.2",
   "dependencies": {
-    "christopherobin/crossfilter": "*"
+    "square/crossfilter": "v1.3.7"
   },
-  "development": {},
   "license": "MIT",
-  "main": "index.js",
   "scripts": [
     "index.js"
   ]
