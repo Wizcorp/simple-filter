@@ -1,4 +1,4 @@
-var crossfilter = require('crossfilter');
+var crossfilter = require('crossfilter').crossfilter || require('crossfilter');
 
 /**
  * Create a filter instance, the filter object is made to be async-proof by only providing atomic

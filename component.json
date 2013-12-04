@@ -3,7 +3,6 @@
   "repo": "Wizcorp/simple-filter",
   "description": "A small wrapper around crossfilter to make querying simpler",
   "version": "0.0.2",
-  "keywords": [],
   "dependencies": {
     "square/crossfilter": "v1.3.7"
   },
