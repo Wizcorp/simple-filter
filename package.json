@@ -1,6 +1,6 @@
 {
   "name": "simple-filter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A small wrapper around crossfilter to make querying simpler",
   "scripts": {
     "test": "./node_modules/.bin/mocha"

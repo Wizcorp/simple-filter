@@ -148,7 +148,7 @@ Filter.prototype.get = function (filters, sortIndex) {
 		var index = indexNames[i];
 
 		// either apply filters, or reset them
-		if (filters[index]) {
+		if (filters.hasOwnProperty(index)) {
 			// support indexes in the form >=0, <0, etc...
 			if (typeof filters[index] === 'string') {
 				// check if we have any comparison operator in there (only for numbers)
