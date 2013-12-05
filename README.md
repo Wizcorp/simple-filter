@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/christopherobin/simple-filter.png)](https://travis-ci.org/christopherobin/simple-filter)
+[![Build Status](https://travis-ci.org/Wizcorp/simple-filter.png)](https://travis-ci.org/Wizcorp/simple-filter)
 
 # simple-filter
 
