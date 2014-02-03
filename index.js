@@ -120,6 +120,7 @@ Filter.prototype.size = function () {
 
 // helper functions
 var comparisonFunctions = {
+	'!': function not(b) { return function (a) { return a != b; }; },
 	'<': function lessThan(b) { return function (a) { return a < b; }; },
 	'>': function greaterThan(b) { return function (a) { return a > b; }; },
 	'<=': function lessThanOrEqualTo(b) { return function (a) { return a <= b; }; },
@@ -153,9 +154,9 @@ Filter.prototype.get = function (filters, sortIndex) {
 			if (typeof filters[index] === 'string') {
 				// check if we have any comparison operator in there (only for numbers)
 				var matches;
-				if ((matches = filters[index].match(/^([<>=]+)([0-9\.]+)$/)) !== null) {
+				if ((matches = filters[index].match(/^([!<>=]+)?(.+)$/)) !== null) {
 					if (comparisonFunctions[matches[1]]) {
-						filters[index] = comparisonFunctions[matches[1]](parseFloat(matches[2]));
+						filters[index] = comparisonFunctions[matches[1]](matches[2]);
 					}
 				}
 			}
