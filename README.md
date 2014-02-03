@@ -46,7 +46,7 @@ filter.delIndex('name');
 Does index `name` exists.
 
 ```javascript
-filter.delIndex('name');
+filter.hasIndex('name');
 ```
 
 ### addRecords(data)
