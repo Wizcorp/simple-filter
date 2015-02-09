@@ -54,4 +54,17 @@ describe('simple-filter', function () {
 		}
 		assert.equal(2, filter.get({ updated: morningUpdate }).length);
 	});
+
+
+    it('should throw an error for a filters object that is not an object', function() {
+        assert.throws(function(done) {
+                filter.get('hello');
+                done();
+            }, function(err) {
+                if ((err instanceof Error) && /value/.test(err)) {
+                    return true;
+                }
+            }, "unexpected error"
+        );
+    });	
 });
