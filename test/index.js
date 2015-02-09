@@ -1,5 +1,5 @@
 var assert = require('assert'),
-    fs = require('fs');
+        fs = require('fs');
 
 var Filter = require('..');
 
