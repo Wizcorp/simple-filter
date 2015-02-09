@@ -58,6 +58,7 @@ describe('simple-filter', function () {
 
     it('should throw an error for a filters object that is not an object', function() {
         assert.throws(function(done) {
+        		// wrapping in a function as filter.get is async to allow Node.JS native assert to capture the exception
                 filter.get('hello');
                 done();
             }, function(err) {
