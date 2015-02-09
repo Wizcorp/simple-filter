@@ -18,7 +18,7 @@
 
 ### Get the constructor function
 
-var Filter = require('simple-filter');
+	var Filter = require('simple-filter');
 
 ### Create a crossfilter
 
