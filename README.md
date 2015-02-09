@@ -10,7 +10,15 @@
 
     $ component install Wizcorp/simple-filter
 
+  Install with [npm](https://www.npmjs.com):
+
+    $ npm install simple-filter
+
 ## API
+
+### Get the constructor function
+
+	var Filter = require('simple-filter');
 
 ### Create a crossfilter
 

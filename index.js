@@ -140,6 +140,10 @@ var comparisonFunctions = {
  *                           considered immutable.
  */
 Filter.prototype.get = function (filters, sortIndex) {
+	if (filters && typeof filters !== 'object') {
+		throw new Error("filters must be an object or null value");
+	}
+	
 	filters = filters || {};
 
 	// get every index names
